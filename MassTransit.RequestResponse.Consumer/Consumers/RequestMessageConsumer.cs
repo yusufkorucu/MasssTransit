@@ -7,7 +7,7 @@ namespace MassTransit.RequestResponsePattern.Consumer.Consumers
        
         public async Task Consume(ConsumeContext<RequestMessage> context)
         {
-            Console.WriteLine(context.Message.Text);
+             Console.WriteLine(context.Message.Text);
 
              await context.RespondAsync<ResponseMessage>( new 
              {
